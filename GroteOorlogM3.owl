@@ -1,0 +1,404 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog#"
+     xml:base="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog"
+     xmlns:cc="http://web.resource.org/cc/"
+     xmlns:go="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog"
+     xmlns:le="http://linkedevents.org/ontology/"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:DUL="http://www.loa-cnr.it/ontologies/DUL.owl#"
+     xmlns:dbo="http://dbpedia.org/ontology/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:terms1="http://open.vocab.org/terms/"
+     xmlns:powder-s="http://www.w3.org/2007/05/powder-s#"
+     xmlns:groteoorlog="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog">
+        <owl:imports rdf:resource="file:/Users/priyesh/Downloads/dbpedia_ind.ttl"/>
+        <owl:imports rdf:resource="http://dbpedia.org/ontology/"/>
+        <owl:imports rdf:resource="http://linkedevents.org/ontology/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/HappenedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/HappenedIn"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/HasAllegianceWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/HasAllegianceWith"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/HasNationality -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/HasNationality"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/IsIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/IsIn"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/PartOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/PartOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/WonBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/WonBy"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://linkedevents.org/ontology/Event -->
+
+    <rdf:Description rdf:about="http://linkedevents.org/ontology/Event">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Event"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Alliance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Alliance"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Battle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Battle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Event"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/WonBy"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Alliance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Bombing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Bombing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/City -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/City">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Location"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/IsIn"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Country"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Commoner -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Commoner">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Country -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Country">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Location"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/PartOf"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Alliance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Event -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Event">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#hasLocation"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Location"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/General -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/General">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Militarian"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Leader -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Leader">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Militarian"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Location">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Mayor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Mayor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Politician"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Militarian -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Militarian">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Person">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/HasNationality"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Country"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/HasAllegianceWith"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Country"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Politician -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Politician">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Soldier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Soldier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Militarian"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Strike -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Strike">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Event"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Adolf_Hitler -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Adolf_Hitler">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Leader"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Allied_bombing_of_Rotterdam -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Allied_bombing_of_Rotterdam">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Bombing"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Event"/>
+        <groteoorlog:HappenedIn rdf:resource="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Rotterdam"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Anne_Frank -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Anne_Frank">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Commoner"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Arnhem -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Arnhem">
+        <rdf:type rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Place"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Battle_Of_Arnhem -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Battle_Of_Arnhem">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Battle"/>
+        <groteoorlog:HappenedIn rdf:resource="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Arnhem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Battle_of_Nijmegen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Battle_of_Nijmegen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Battle"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Event"/>
+        <le:atPlace rdf:resource="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Nijmegen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Capitulation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Capitulation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Event"/>
+        <groteoorlog:HappenedIn rdf:resource="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Wageningen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Charles_Foulkes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Charles_Foulkes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/General"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/February_strike -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/February_strike">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Event"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Strike"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Johannes_Blaskowitz -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Johannes_Blaskowitz">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/General"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/John_Frost -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/John_Frost">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Soldier"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Nijmegen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Nijmegen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Location"/>
+        <DUL:hasLocation rdf:resource="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Nijmegen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Rotterdam -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Rotterdam">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Location"/>
+        <DUL:hasLocation rdf:resource="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Rotterdam"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Wageningen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Wageningen">
+        <rdf:type rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Place"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Walter_Model -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Walter_Model">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rabie/ontologies/2019/9/groteoorlog/Person"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
