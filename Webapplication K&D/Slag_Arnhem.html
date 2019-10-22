@@ -20,12 +20,12 @@
 
     <!-- Navigation -->
     <div class="topnav">
-      <a href="index.html">Home</a>
-      <a href="algemene_informatie.html">Algemene Informatie</a>
-      <a href="belangrijke_plekken.html">Belangrijke Plekken</a>
-      <a href="personen.html">Personen</a>
-      <a href="gebeurtenissen.html">Gebeurtenissen</a>
-      <a href="over_ons.html">Over Ons</a>
+    <a href="index.html">Home</a>
+    <a href="algemene_informatie.html">Algemene Informatie</a>
+    <a href="belangrijke_plekken.html">Belangrijke Plekken</a>
+    <a href="personen.html">Personen</a>
+    <a href="gebeurtenissen.html">Gebeurtenissen</a>
+    <a href="over_ons.html">Over Ons</a>
       <div class="search-container">
         <form action="/action_page.php">
           <input type="text" placeholder="Search.." name="search">
@@ -36,37 +36,17 @@
     
     <!-- Main Content -->
 
+
     <div>
       <img src="nationaal_comite.png" align="left"/>
       <h1>
-        <center>Gebeurtenissen</center>
+        <center>Arnhem</center>
       </h1>
     </div>
-
-    <ul>
-        <li><a href="Slag_Arnhem.html">Slag bij Arnhem</a></li>
-        <li><a href="Slag_Nijmegen.html">Slag bij Nijmegen</a></li>
-        <li><a href="Bom_Rotterdam.html">Bombardement van Rotterdam</a></li>
-        <li><a href="Februaristaking.html">Februari Staking</a></li>
-        <li><a href="Capitulatie.html">Capitulatie</a></li>
-    </ul>  
-
-    <div class="container mt-5 mb-5">
-      <div class="row">
-          <div class="col-8">
-             <h2><font color="red">{{Results}}</font></h2>
-             <canvas class="chart chart-pie" chart-data="myDynamicData" chart-labels="myDynamicLabels"> </canvas>
-          </div>
-       </div>
-    </div>
-
-
     
-    
-
-
-    
-
+    <p data-ng-init="Abstract_Arnhem()">{{Results}}<p>
+  
+  
     <!-- JavaScript libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/angular.min.js"></script>
@@ -75,7 +55,6 @@
 	<script src="js/angular-chart.min.js"></script>
 
 	<script src="main.js"></script>
-
   </body>
 
 </html>
