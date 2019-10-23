@@ -64,3 +64,15 @@
 .topnav .search-container button:hover {
   background: #ccc;
 }
+
+
+div.b {
+  position: absolute;
+  top: 70%;
+  left: 53%;
+  margin-top: -105px;
+  margin-left: -50px;
+  width: 400px;
+  height: 400px;
+  word-wrap: break-word;
+}
