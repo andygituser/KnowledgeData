@@ -26,41 +26,44 @@
       <a href="personen.html">Personen</a>
       <a href="gebeurtenissen.html">Gebeurtenissen</a>
       <a href="over_ons.html">Over Ons</a>
-      <div class="search-container">
-        <form action="/action_page.php">
-          <input type="text" placeholder="Search.." name="search">
-          <button type="submit"><i class="fa fa-search"></i></button>
-        </form>
-      </div>
-    </div>
-    
-    <!-- Main Content -->
-
-    <div>
-      <img src="nationaal_comite.png" align="left"/>
-      <h1>
-        <center>Welkom bij DeGroteOorlog.nl!</center>
-      </h1>
     </div>
 
- 
-    <div class="container mt-5 mb-5">
-      <div class="row">
-          <div class="col-8">
-              <h2>What is your Query?</h2>
-            <div class="input-group">
-              <input type="text" class="form-control" ng-model="myInputQuery" placeholder="Type here your SPARQL query" >
-              <div class="input-group-append">
-                <button class="btn btn-outline-secondary" ng-click="launchMyGreatApp()" type="button">GO!</button>
-              </div>
-            </div>
-          </div>
+
+    <!-- Search Input. -->
+    <div id="intro">
+        <img src="images/nationaal_comite.png" class="float-left">
+        <article class="d-inline-block w-50 m-5">
+            <h1>Welkom bij DeGroteOorlog.nl</h1>
+            <p>
+                Welkom! Deze pagina gaat over de Tweede Wereldoorlog. Je kan hier informatie vinden over de belangrijkste personen, gebeurtenissen en plekken van de Tweede Wereldoorlog. Navigeer via de balk hierboven naar waar je op zoek bent.            </p>
+        </article>
+    </div>
+    <!-- End of intro -->
+
+    <!-- Main content -->
+    <div id="main-content" class="p-5 d-block">
+        <article class="w-25 float-left">
+            <h4 class="d-inline-block">In deze maand, Oktober, tijdens de oorlog:</h4>
+            <br>
+            <!-- Set img width in css instead of bs class -->
+            <img src="images/main_page_zep.jpg" class="w-100">
+            <p>
+                    Graf Zeppelin was een vliegdekschip van de Kriegsmarine, net als het beroemde luchtschip genoemd naar Graf Ferdinand von Zeppelin. Het was Duitslands enige vliegdekschip gedurende de Tweede Wereldoorlog. De opdracht voor de bouw werd gegeven op 16 november 1935 en de kiellegging was op 28 december 1936 bij Deutsche Werke in Kiel. Het werd te water gelaten op 8 december 1938, maar werd nooit voltooid, nooit in dienst gesteld en heeft nooit deelgenomen aan de oorlog. (Wikipedia)            </p>
+        </article>
+
+        <!-- List on the right side -->
+        <div id="content-right" class="float-right">
+            <ul>
+                <h4>Aanbevolen pagina's</h4>
+                <!-- Make these a href able -->
+                <li><a href="Februaristaking.html">De Februaristaking</a></li>
+                <li><a href="Bom_Rotterdam.html">Het Bombardement in Rotterdam</a></li>
+                <li><a href="Slag_Nijmegen.html">De slag bij Nijmegen</a></li>
+                <li><a href="Adolf_Hitler.html">Adolf Hitler</a></li>
+                <li><a href="Capitulatie.html">Capitulatie</a></li>
+            </ul>
         </div>
     </div>
-
-
-  
-
 
     <!-- JavaScript libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
